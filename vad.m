@@ -55,4 +55,7 @@ for i = 1:m
 end
 n1 = (start_point-1)*FrameIncrease;
 n2 = (end_point-1)*FrameIncrease;
+if n2<0
+    n2=length(x);
+end
 end
